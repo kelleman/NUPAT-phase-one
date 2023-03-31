@@ -8,8 +8,8 @@ app.use(cors())
 
 const PORT = 4000
 
-const API_KEY = process.env.RAPID_API_KEY
-const API_HOST = process.env.RAPID_API_HOST
+const API_KEY = '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54'
+const API_HOST = 'yummly2.p.rapidapi.com'
 
 // Endpoint to get auto-complete suggestions
 app.get('/auto-complete', (req, res) => {
