@@ -18,8 +18,8 @@ app.get('/auto-complete', (req, res) => {
     url: 'https://yummly2.p.rapidapi.com/feeds/auto-complete',
     params: {q: 'chicken soup'},
     headers: {
-      'X-RapidAPI-Key': API_KEY,
-      'X-RapidAPI-Host': API_HOST,
+      'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+      'X-RapidAPI-Host': 'yummly2.p.rapidapi.com',
     },
   };
 
@@ -49,8 +49,8 @@ app.get('/recipes-list', (req, res) => {
     url: 'https://yummly2.p.rapidapi.com/feeds/list',
     params: { limit: '24', start: '0' },
     headers: {
-      'X-RapidAPI-Key': API_KEY,
-      'X-RapidAPI-Host': API_HOST,
+      'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+      'X-RapidAPI-Host': 'yummly2.p.rapidapi.com',
     },
   };
 
@@ -86,8 +86,8 @@ app.get('/recipes/search/:query', async (req, res) => {
         q: query,
       },
       headers: {
-        'X-RapidAPI-Key': API_KEY,
-        'X-RapidAPI-Host': API_HOST
+        'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+        'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
       }
     };
     const response = await axios.request(options);
@@ -113,8 +113,8 @@ app.get('/similar-recipes/:recipeId', (req, res) => {
       authorId: 'Yummly'
     },
     headers: {
-      'X-RapidAPI-Key': API_KEY,
-      'X-RapidAPI-Host': API_HOST
+      'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+      'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
     }
   };
 
@@ -135,8 +135,8 @@ app.get("/tags", async (req, res) => {
       method: "GET",
       url: "https://yummly2.p.rapidapi.com/tags/list",
       headers: {
-        "X-RapidAPI-Key": API_KEY,
-        "X-RapidAPI-Host": API_HOST,
+        "X-RapidAPI-Key": '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+        "X-RapidAPI-Host": 'yummly2.p.rapidapi.com',
       },
     };
     const response = await axios.request(options);
@@ -154,7 +154,7 @@ app.get('/categories', async (req, res) => {
       method: 'GET',
       url: 'https://yummly2.p.rapidapi.com/categories/list',
       headers: {
-        'X-RapidAPI-Key': API_KEY,
+        'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
         'X-RapidAPI-Host': API_HOST
       }
     };
@@ -174,8 +174,8 @@ app.get('/reviews', async (req, res) => {
       url: 'https://yummly2.p.rapidapi.com/reviews/list',
       params: {offset: '0', globalId: 'a8d6747a-bfaa-46a7-92fb-892e3f76b264', limit: '20'},
       headers: {
-        'X-RapidAPI-Key': API_KEY,
-        'X-RapidAPI-Host': API_HOST
+        'X-RapidAPI-Key': '09d60864bfmshe1f3fee77e038f4p1e1fc6jsndb03426ada54',
+        'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
       }
     };
 
